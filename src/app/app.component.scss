@@ -1,0 +1,40 @@
+nav{
+  background-color: #162a6d;
+  border-radius: 25px;
+  min-height: 80px;
+  margin-top: 10vh;
+  position: sticky;
+  opacity: 0.7;
+}
+
+.btn-outline-info {
+  border-color: #0091f9;
+  background: #6161dc !important;
+  color: white !important;
+
+  &:hover{
+    background: #0091f9 !important;
+    opacity: 0.8;
+    color: #263569;
+  }
+
+  &:focus{
+    box-shadow: #304BA8;
+  }
+}
+.container{
+  max-width: 800px
+}
+
+.active{
+  background: darkcyan !important;
+  color: #263569 !important;
+  border-color: #304BA8 !important;
+}
+
+li {
+  list-style-type: none;
+}
+.navbar {
+  justify-content: space-around !important;
+}

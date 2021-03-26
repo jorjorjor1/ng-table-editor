@@ -1,0 +1,21 @@
+<!--
+Экран ввода - компонент ввода
+Экран просмотра - компонент для каждого obj, компонент для общего списка
+Экран изменения - изменяем значения для компонента obj
+Экран удаления - че нить замутим
+-->
+<div class="container">
+  <!-- Content here -->
+  <nav class="navbar">
+    <div class="nav-item">
+      <a class="btn btn-outline-info" routerLink="/list">Таблица</a>
+    </div>
+    <div class="nav-item">
+      <a class="btn btn-outline-info" routerLink="/output">Выгрузить</a>
+    </div>
+    <div class="nav-item">
+      <a class="btn btn-outline-info" routerLink="/data-input">Загрузить</a>
+    </div>
+  </nav>
+  <router-outlet></router-outlet>
+</div>

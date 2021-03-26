@@ -1,0 +1,25 @@
+<div *ngIf="obj; else elseBlock">
+<div class="row"  *ngFor="let row of obj">
+  <div class="col">
+    <input type="text" class="form-control" id="usr" value="{{row.key}}" disabled>
+  </div>
+  <div class="col">
+    <input class="form-control" [(ngModel)]="row.value" >
+  </div>
+</div>
+  <button class="btn btn-outline-warning"(click)="goBack()">Назад</button>
+</div>
+
+<ng-template #elseBlock>
+  <app-error></app-error>
+</ng-template>
+
+
+
+<!--<div >-->
+
+<!--  -->
+<!--  {{row.value}}-->
+<!--</div>-->
+
+

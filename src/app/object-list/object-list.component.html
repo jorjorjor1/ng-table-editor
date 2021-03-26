@@ -1,0 +1,32 @@
+
+
+
+<div *ngIf="!!inputObject && inputObject.length; else elseBlock" >
+  <button class="btn btn-outline-success" id="create" routerLink="/createnew">Добавить</button>
+  <table class="table">
+    <thead>
+    <tr>
+      <th >Переместить</th>
+      <th scope="col" *ngFor="let item of inputObject[0]">
+        {{item.key}}
+      </th>
+      <th>Подробнее</th>
+      <th>Удалить</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let row of inputObject; let idx = index">
+      <th scope="row" id="arrows"><span (click)="rowUp(idx)">&#9650;</span>   <span (click)="rowDown(idx)">&#9660;</span></th>
+      <td *ngFor="let item of row">{{item.value}}</td>
+      <td><a routerLink="/list/{{idx}}">Редактировать</a></td>
+      <td><button class="btn btn-outline-danger" (click)="dataInputService.deleteIndex(idx)">Удалить</button></td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+<ng-template #elseBlock>
+  <app-error></app-error>
+</ng-template>
+
+

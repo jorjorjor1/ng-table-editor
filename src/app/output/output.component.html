@@ -1,0 +1,19 @@
+<div *ngIf="data; else elseBlock" class="container-output">
+<textarea class="form-control" aria-label="With textarea"
+          [value]="data | json"></textarea>
+  <div class="row">
+    <div class="col-sm-4">
+    </div>
+    <div class="col-sm-4">
+      <button class="btn btn-outline-success" (click)="saveToJson('output')">в json</button>
+    </div>
+    <div class="col-sm-4">
+      <button class="btn btn-outline-success" (click)="saveToCsv('output')">в csv</button>
+    </div>
+  </div>
+
+
+</div>
+<ng-template #elseBlock>
+  <app-error></app-error>
+</ng-template>

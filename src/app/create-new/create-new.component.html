@@ -1,0 +1,16 @@
+<div *ngIf="!!obj; else elseBlock">
+  <div class="row"  *ngFor="let item of obj">
+    <div class="col">
+      <input type="text" class="form-control"  value="{{item.key}}" disabled>
+    </div>
+    <div class="col">
+      <input class="form-control" [(ngModel)]="item.value" >
+    </div>
+  </div>
+
+<button class="btn btn-outline-success" (click)="createNewRow()" routerLink="/list">Сохранить</button>
+</div>
+
+<ng-template #elseBlock>
+  <app-error></app-error>
+</ng-template>

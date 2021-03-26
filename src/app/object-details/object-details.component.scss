@@ -1,0 +1,17 @@
+.row{
+  margin-top: 50px;
+}
+.btn-outline-warning{
+  margin-top: 25px;
+  float: left;
+  background: #ffc107 !important;
+  color: white;
+
+
+  &:hover{
+    background-color: lighten(#ffc107, 10);
+  }
+}
+
+
+

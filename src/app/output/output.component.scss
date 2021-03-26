@@ -1,0 +1,22 @@
+@import
+'../../styles';
+
+textarea{
+  @include text-area
+}
+.btn-light{
+  margin-top: 25px;
+  float: left;
+}
+
+p{
+  margin-top: 10px;
+  font-size: 20px;
+  color: beige;
+}
+
+.btn-outline-success {
+  @include button-success;
+  float: right;
+  width: 150px;
+}

@@ -1,0 +1,37 @@
+table{
+  margin-top: 20px;
+  font-size: 20px;
+  background: beige;
+}
+p{
+  margin-top: 10px;
+  font-size: 20px;
+  color: beige;
+}
+
+#create{
+  margin: 20px 0 20px 0;
+}
+
+.btn-outline-success {
+  margin-top: 25px;
+  float: right;
+  background: #37e026 !important;
+  color: white;
+
+  &:hover {
+    background: darken(#37e026, 10) !important;
+  }
+}
+
+#arrows{
+  float: right;
+
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+th:nth-child(1){
+  float:right;
+}

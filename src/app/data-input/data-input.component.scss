@@ -1,0 +1,12 @@
+@import
+'../../styles';
+
+textarea{
+  @include text-area
+}
+
+button{
+  margin-top: 25px;
+}
+
+

@@ -1,0 +1,11 @@
+@import
+'../../styles';
+
+.row{
+  margin-top: 50px;
+}
+
+.btn-outline-success {
+  @include button-success;
+  float: right;
+}

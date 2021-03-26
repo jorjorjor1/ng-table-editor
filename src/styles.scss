@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+@mixin button-success {
+  margin-top: 25px;
+  float: right;
+  background: #37e026 !important;
+  color: white;
+
+  &:hover {
+    background: darken(#37e026, 10) !important;
+  }
+}
+
+@mixin text-area {
+  margin-top: 50px;
+  height: 20vh;
+}
+
+body {
+  font-family: Roboto;
+  height: 100vh;
+  background-image: url('/assets/1.jpg');
+  min-width: 340px;
+}
